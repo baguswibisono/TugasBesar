@@ -7,5 +7,6 @@ HTML & CSS terdiri dari
 
 Cara Membuka HTML BAD
 1. Download semua foto Galerry BAD
-2. Buka page.html
+2. Download Semua HTML & CSS
+3. Buka page.html
 3. BAD sudah dapat di Review
