@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>BAD Gallery-Designer and Entertainment  </title>
+    <link rel="icon" href="Art1.png" type="image/icon type">
+  </head>
+  <body>
+    <!-- loading -->
+    <div class="loader-wrapper">
+<span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <header>
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a href="page.html" class="logo">BAD</a>
+        <ul>
+          <li><a href="designer.html">DESIGNER</a></li>
+          <li><a href="artis.html">ARTIST</a></li>
+          <li> <a href="https://twitter.com/intent/tweet?url=file:///C:/Users/Bagus/Documents/WEB/web%20prototype%202/page.html">Share</a> </li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="mailto:baguswibisono028@gmail.com">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
+<section>
+  <div class="container">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img1.jpg"></div>
+          <div class="swiper-slide"><img src="img2.jpg"></div>
+          <div class="swiper-slide"><img src="img3.jpg"></div>
+          <div class="swiper-slide"><img src="img4.jpg"></div>
+          <div class="swiper-slide"><img src="img5.jpg"></div>
+          <div class="swiper-slide"><img src="img6.jpg"></div>
+          <div class="swiper-slide"><img src="img7.jpg"></div>
+          <div class="swiper-slide"><img src="img8.jpg"></div>
+        </div>
+  </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-bottom">
+    <p>copyright &copy;2020 Bagus Aesthetic Design. Designed by <a href="page.html">BAD</a> </p>
+  </div>
+</footer>
+<script>
+    var swiper = new Swiper('.container .swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      autoplay: {
+        delay: 600,
+        disableOnInteraction: false,
+      },
+    });
+
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});
+
+
+  </script>
+  </body>
+</html>
