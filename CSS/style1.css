@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One: 200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Fredoka+One',sans-serif;
+}
+body
+{
+      background: #fff;
+}
+/* NAV BAR */
+nav
+{
+  position: absolute;
+  background: #111;
+  height: 80px;
+  width: 100%;
+  z-index: 2;
+}
+nav .logo
+{
+  font-size: 35px;
+  color: #fff;
+  padding: 0 100px;
+  line-height: 80px;
+  font-weight: bold;
+}
+nav ul
+{
+  float: right;
+  margin-right: 20px;
+  z-index: 2;
+}
+nav ul li
+{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px;
+}
+nav ul li a
+{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+}
+a.active,a:hover
+{
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+.checkbtn
+{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check
+{
+  display: none;
+}
+/*isi boe*/
+.about
+{
+  height: 100vh;
+  display: flex;
+}
+.about-title
+{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.about-title a span
+{
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+.about-title span::before
+{
+  content: '';
+  animation: animate infinite 3s;
+}
+@keyframes animate
+{
+  0%
+  {
+    content: 'Design Visual';
+  }
+  40%
+  {
+    content: 'Photography';
+  }
+  80%
+  {
+    content: 'Entertainment';
+  }
+  100%
+  {
+    content: ' Travel Content Creator';
+  }
+}
+.about-page
+{
+  width: 50%;
+}
+.about-page div
+{
+  padding-top: 100px;
+  padding-bottom: 80px;
+  color: #fff;
+  height: 100vh;
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+.about-page div p
+{
+  color: #fff;
+  font-size: 14px;
+}
+.about-page div:nth-child(1)
+{
+  background: #111;
+}
+/*Footer*/
+footer
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  background: #111;
+}
+.footer-bottom
+{
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p
+{
+  font-size: 32px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.footer-bottom a
+{
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+  transition: 0.5s;
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+/* 1200px */
+@media (max-width: 1200px)
+{
+    nav .logo
+  {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a
+  {
+    font-size: 16px;
+  }
+  footer
+  {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+  }
+  .footer-bottom
+  {
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-bottom p
+  {
+    font-size: 24px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .footer-bottom a
+  {
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
+  /* isi jeng */
+  .about
+  {
+    height: 100vh;
+    display: flex;
+  }
+  .about-title
+  {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  .about-title a span
+  {
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
+  .about-title span::before
+  {
+    content: '';
+    animation: animate infinite 5s;
+  }
+  @keyframes animate
+  {
+    0%
+    {
+      content: 'Design Visual';
+    }
+    40%
+    {
+      content: 'Photography';
+    }
+    80%
+    {
+      content: 'Entertainment';
+    }
+    100%
+    {
+      content: ' Travel Content Creator';
+    }
+  }
+  .about-page
+  {
+    width: 50%;
+  }
+  .about-page div
+  {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+  }
+  .about-page div p
+  {
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+  }
+  .about-page div:nth-child(1)
+  {
+    background: #111;
+  }
+
+
+/* 992px */
+@media (max-width:992px)
+{
+    nav .logo
+  {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a
+  {
+    font-size: 16px;
+  }
+  footer
+  {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+  }
+  .footer-bottom
+  {
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-bottom p
+  {
+    font-size: 24px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .footer-bottom a
+  {
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
+  /* isi jeng */
+  .about
+  {
+    height: 100vh;
+    display: flex;
+  }
+  .about-title
+  {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  .about-title a span
+  {
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
+  .about-title span::before
+  {
+    content: '';
+    animation: animate infinite 5s;
+  }
+  @keyframes animate
+  {
+    0%
+    {
+      content: 'Design Visual';
+    }
+    40%
+    {
+      content: 'Photography';
+    }
+    80%
+    {
+      content: 'Entertainment';
+    }
+    100%
+    {
+      content: ' Travel Content Creator';
+    }
+  }
+  .about-page
+  {
+    width: 50%;
+  }
+  .about-page div
+  {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+  }
+  .about-page div p
+  {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+  }
+  .about-page div:nth-child(1)
+  {
+    background: #111;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width:768px)
+{
+    .checkbtn
+  {
+    display: block;
+  }
+  ul
+  {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li
+  {
+    display: block;
+    margin: 60px 50px;
+    line-height: 30px;
+  }
+  nav ul li a
+  {
+    font-size: 20px;
+  }
+  a:hover,a.active
+  {
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
+  #check:checked ~ ul
+  {
+    left: 0;
+  }
+  footer
+  {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+  }
+  .footer-bottom
+  {
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-bottom p
+  {
+    font-size: 16px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .footer-bottom a
+  {
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
+
+
+
+  /* isi jeng */
+  .about
+  {
+    height: 100vh;
+    display: flex;
+  }
+  .about-title
+  {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  .about-title a span
+  {
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
+  .about-title span::before
+  {
+    content: '';
+    animation: animate infinite 5s;
+  }
+  @keyframes animate
+  {
+    0%
+    {
+      content: 'Design Visual';
+    }
+    40%
+    {
+      content: 'Photography';
+    }
+    80%
+    {
+      content: 'Entertainment';
+    }
+    100%
+    {
+      content: ' Travel Content Creator';
+    }
+  }
+  .about-page
+  {
+    width: 50%;
+  }
+  .about-page div br
+  {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+  }
+  .about-page div p
+  {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+  }
+  .about-page div:nth-child(1)
+  {
+    background: #111;
+  }
+}
+@media (max-width:576px)
+{
+    nav .logo
+  {
+    font-size: 32px;
+    padding-left: 10px;
+  }
+  .checkbtn
+  {
+    display: block;
+  }
+  ul
+  {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li
+  {
+    display: block;
+    margin: 60px 50px;
+    line-height: 30px;
+  }
+  nav ul li a
+  {
+    font-size: 20px;
+  }
+  a:hover,a.active
+  {
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
+  #check:checked ~ ul
+  {
+    left: 0;
+  }
+  footer
+  {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+  }
+  .footer-bottom
+  {
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-bottom p
+  {
+    font-size: 16px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .footer-bottom a
+  {
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
+  /* isi jeng */
+  .about
+  {
+    height: 200vh;
+    display: flex;
+  }
+  .about-title
+  {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  .about-title a span
+  {
+    position: absolute;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.5;
+    filter: grayscale(1);
+  }
+  /* effect */
+  .about-title span::before
+  {
+    content: '';
+    animation: animate infinite 5s;
+  }
+  @keyframes animate
+  {
+    0%
+    {
+      content: 'Design Visual';
+    }
+    40%
+    {
+      content: 'Photography';
+    }
+    80%
+    {
+      content: 'Entertainment';
+    }
+    100%
+    {
+      content: ' Travel Content Creator';
+    }
+  }
+/* bawah */
+  .about-page
+  {
+    position: relative;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .about-page div
+  {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+  }
+  .about-page div p
+  {
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+  }
+  .about-page div:nth-child(1)
+  {
+    background: #111;
+  }
+}
